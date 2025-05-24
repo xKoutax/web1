@@ -23,48 +23,61 @@
       justify-content: center;
       align-items: center;
       overflow: hidden;
+      user-select: none; /* Evitar selección de texto */
     }
 
-    h1 {
-      font-size: 4em;
-      margin-bottom: 0.2em;
+    .title-main {
+      font-size: 5em;
+      margin: 0.1em 0 0.15em 0;
       animation: flicker 2s infinite;
+      user-select: none;
     }
 
-    h2 {
-      font-size: 2em;
+    .title-sub {
+      font-size: 2.5em;
       color: #ff0066;
-      margin-top: 0;
+      margin: 0 0 0.3em 0;
+      user-select: none;
+    }
+
+    .logo {
+      margin: 10px auto 15px auto;
+      user-select: none;
     }
 
     .logo img {
-      width: 150px;
+      width: 280px; /* Más grande */
       height: auto;
       border-radius: 10px;
-      box-shadow: 0 0 15px #00ffcc;
-      margin: 20px auto;
+      box-shadow: 0 0 25px #00ffcc;
+      user-select: none;
+      display: block;
+      margin: 0 auto;
     }
 
-    h3 {
-      font-size: 1.8em;
+    .logo-name {
+      font-size: 2.8em;
       color: #00ffff;
-      margin-top: 0.5em;
+      margin-top: 0.3em;
+      user-select: none;
     }
 
-    p {
+    .message {
       max-width: 90%;
-      font-size: 1.4em;
+      font-size: 1.6em;
       color: #ddd;
       margin-top: 30px;
+      user-select: none;
     }
 
     .footer {
       position: absolute;
       bottom: 20px;
       right: 20px;
-      font-size: 1em;
+      font-size: 1.2em;
       color: #888;
       font-style: italic;
+      user-select: none;
     }
 
     @keyframes flicker {
@@ -76,18 +89,32 @@
       }
     }
   </style>
+
+  <script>
+    // Evitar clic derecho
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Evitar combinaciones de teclas para abrir DevTools o ver código fuente
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'F12' ||
+          (event.ctrlKey && event.shiftKey && ['i','j'].includes(event.key.toLowerCase())) ||
+          (event.ctrlKey && ['u','s'].includes(event.key.toLowerCase()))) {
+        event.preventDefault();
+      }
+    });
+  </script>
 </head>
 <body>
 
-  <h1>ACCESS EXPLOITED</h1>
-  <h2>HACKED BY</h2>
+  <div class="title-main">ACCESS EXPLOITED</div>
+  <div class="title-sub">HACKED BY</div>
 
   <div class="logo">
     <img src="https://github.com/xKoutax/portfolio/blob/master/assets/images/tats.jpg?raw=true" alt="Logo" />
-    <h3>Tätsú_</h3>
+    <div class="logo-name">Tätsú_</div>
   </div>
 
-  <p>
+  <p class="message">
     Your system is vulnerable. This is not an attack, it's a wake-up call. By Anonymous.<br>
     <strong>Check your configurations and patch your system!</strong>
   </p>
