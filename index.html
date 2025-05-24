@@ -2,122 +2,98 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Hacked Page - By Tätsú_</title>
-  
-  <!-- Google Font: Roboto -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hacked By Tätsú_</title>
+
+  <!-- Google Font: Orbitron -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap" rel="stylesheet" />
+
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: url('https://c4.wallpaperflare.com/wallpaper/598/482/363/black-black-and-white-anonymous-hackers-wallpaper-preview.jpg') no-repeat center center fixed;
+      background: black url('https://c4.wallpaperflare.com/wallpaper/598/482/363/black-black-and-white-anonymous-hackers-wallpaper-preview.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #ddd;
-      font-family: 'Roboto', Arial, sans-serif;
+      font-family: 'Orbitron', monospace;
+      color: #00ffcc;
       text-align: center;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       overflow: hidden;
-      position: relative;
-      backdrop-filter: brightness(0.8) contrast(1.2);
     }
 
-    .title {
-      color: #bbbbbb;
-      font-size: 3.2em;
-      font-weight: 600;
-      margin: 20px 0;
-      max-width: 90vw;
-      word-wrap: break-word;
+    h1 {
+      font-size: 4em;
+      margin-bottom: 0.2em;
+      animation: flicker 2s infinite;
     }
 
-    .hacked {
-      color: #a0a0a0;
-      font-size: 2.8em;
-      margin: 10px 0;
-      font-weight: 500;
-    }
-
-    .by {
-      font-size: 3.8em;
-      color: #8fa8c8;
-      margin-bottom: 30px;
-      font-weight: 700;
+    h2 {
+      font-size: 2em;
+      color: #ff0066;
+      margin-top: 0;
     }
 
     .logo img {
-      width: 450px;
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00ffcc;
+      margin: 20px auto;
+    }
+
+    h3 {
+      font-size: 1.8em;
+      color: #00ffff;
+      margin-top: 0.5em;
+    }
+
+    p {
       max-width: 90%;
-      border: 2px solid #8fa8c8;
-      border-radius: 12px;
-      box-shadow: 0 0 30px #8fa8c8;
+      font-size: 1.4em;
+      color: #ddd;
+      margin-top: 30px;
     }
 
-    .msg {
-      color: #cfcfcf;
-      font-size: 1.6em;
-      margin-top: 40px;
-      padding: 0 20px;
-      font-weight: 400;
-      width: 100vw;
-      max-width: 100%;
-      box-sizing: border-box;
-      text-align: center;
-      user-select: none;
-    }
-
-    .alert {
-      color: #9abedc;
-      font-size: 1.9em;
-      margin-top: 20px;
-      font-weight: 500;
-    }
-
-    .illusion {
+    .footer {
       position: absolute;
-      bottom: 15px;
-      right: 15px;
-      color: #b0c4de;
-      font-size: 1.3em;
+      bottom: 20px;
+      right: 20px;
+      font-size: 1em;
+      color: #888;
       font-style: italic;
-      font-weight: 400;
-      max-width: 40%;
-      text-align: right;
-      user-select: none;
-      opacity: 0.7;
-      letter-spacing: 0.06em;
-      line-height: 1.2em;
     }
 
-    @media (max-width: 600px) {
-      .illusion {
-        max-width: 70%;
-        font-size: 1em;
-        bottom: 10px;
-        right: 10px;
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+      }
+      20%, 24%, 55% {
+        opacity: 0;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="title">Access Exploited</div>
-  <div class="hacked">:: HACKED BY ::</div>
+  <h1>ACCESS EXPLOITED</h1>
+  <h2>HACKED BY</h2>
+
   <div class="logo">
     <img src="https://github.com/xKoutax/portfolio/blob/master/assets/images/tats.jpg?raw=true" alt="Logo" />
-  </div>
-  <div class="by">Tätsú_</div>
-  <div class="msg">
-    Sorry Admin, I Was On Your System. By Anonymous, PLEASE CHECK AND PATCH YOUR SECURITY!
+    <h3>Tätsú_</h3>
   </div>
 
-  <div class="alert">- Ethical Hacking -</div>
+  <p>
+    Your system is vulnerable. This is not an attack, it's a wake-up call. By Anonymous.<br>
+    <strong>Check your configurations and patch your system!</strong>
+  </p>
 
-  <div class="illusion">~ SECURITY IS JUST AN ILLUSION ~</div>
+  <div class="footer">~ Security is just an illusion ~</div>
 
 </body>
 </html>
+
