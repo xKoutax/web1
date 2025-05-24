@@ -5,14 +5,15 @@
   <title>Hacked Page - By Tätsú_</title>
   
   <!-- Google Font: Roboto -->
-  <link href="https://images3.alphacoders.com/667/66787.jpg" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet" />
   
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-color: #000000; /* negro puro */
-      color: #ddd; /* gris claro */
+      background: url('https://c4.wallpaperflare.com/wallpaper/598/482/363/black-black-and-white-anonymous-hackers-wallpaper-preview.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ddd;
       font-family: 'Roboto', Arial, sans-serif;
       text-align: center;
       display: flex;
@@ -21,15 +22,16 @@
       align-items: center;
       height: 100vh;
       overflow: hidden;
-      position: relative; /* necesario para posicionamiento absoluto hijo */
+      position: relative;
+      backdrop-filter: brightness(0.8) contrast(1.2);
     }
 
     .title {
       color: #bbbbbb;
-      font-size: 3.2em;  /* tamaño reducido */
+      font-size: 3.2em;
       font-weight: 600;
       margin: 20px 0;
-      max-width: 90vw; /* para que no se desborde */
+      max-width: 90vw;
       word-wrap: break-word;
     }
 
@@ -42,7 +44,7 @@
 
     .by {
       font-size: 3.8em;
-      color: #8fa8c8; /* azul suave */
+      color: #8fa8c8;
       margin-bottom: 30px;
       font-weight: 700;
     }
@@ -61,11 +63,10 @@
       margin-top: 40px;
       padding: 0 20px;
       font-weight: 400;
-
-      width: 100vw;           /* ancho total de la ventana */
-      max-width: 100%;        /* no exceder la ventana */
-      box-sizing: border-box; /* padding no aumenta ancho */
-      text-align: center;     /* texto centrado */
+      width: 100vw;
+      max-width: 100%;
+      box-sizing: border-box;
+      text-align: center;
       user-select: none;
     }
 
@@ -79,7 +80,7 @@
     .illusion {
       position: absolute;
       bottom: 15px;
-      right: 15px; /* esquina inferior derecha */
+      right: 15px;
       color: #b0c4de;
       font-size: 1.3em;
       font-style: italic;
@@ -92,7 +93,6 @@
       line-height: 1.2em;
     }
 
-    /* Ajustes para pantallas pequeñas */
     @media (max-width: 600px) {
       .illusion {
         max-width: 70%;
